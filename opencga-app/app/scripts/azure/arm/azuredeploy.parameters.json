@@ -3,18 +3,24 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "_artifactsLocation": {
-            "value": ""
+            "value": "https://raw.githubusercontent.com/marrobi/opencga/feature/loganalytics/opencga-app/app/scripts/azure/arm"
         },
         "_artifactsLocationSasToken": {
             "value": ""
         },
+        "HDInsightClusterLoginPassword": {
+            "value": "HD1nsights@zure"
+        },
+        "HDInsightSshPassword": {
+            "value": "HD1nsights@zure"
+        },
         "HDInsightStorageOption": {
             "value": "DataLake"
         },
-        "rgPrefix": {
-            "value": "opencga"
+        "rgPrefix":{
+            "value": "tmpOpenCGA25"
         },
-        "rgLocation": {
+        "rgLocation":{
             "value": "uksouth"
         },
         "avereServicePrincipalAppId": {
@@ -23,44 +29,41 @@
         "avereServicePrincipalPassword": {
             "value": ""
         },
-        "sshAdminKeyData": {
-            "value": ""
-        },
-        "nfsStorageOption": {
-            "value": ""
-        },
-        "mongoDBPassword": {
-            "value": ""
-        },
-        "openCGAContainerImage": {
-            "value": ""
-        },
-        "ivaContainerImage": {
-            "value": ""
-        },
-        "initContainerImage": {
-            "value": ""
-        },
-        "daemonContainerImage": {
-            "value": ""
-        },
-        "catalogSecretKey": {
-            "value": ""
-        },
-        "mongoCertificateEmail": {
-            "value": ""
-        },
+
         "avereAdminPassword": {
             "value": ""
         },
-        "HDInsightClusterLoginPassword": {
-            "value": ""
+        "openCGAContainerImage": {
+            "value": "marrobi/opencga-app"
         },
-        "HDInsightSshPassword": {
-            "value": ""
+        "ivaContainerImage": {
+            "value":  "opencb/iva:e778c30b277ab3f478160c7d0b10118fadf9fb49"
+        },
+        "daemonContainerImage":{
+            "value":  "marrobi/opencga-daemon"
+
+        },
+        "initContainerImage":{
+            "value":  "marrobi/opencga-init"
+
+        },
+        "sshAdminKeyData": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDV+oP0AcmPuWVzKZR3hL/8uQ1jlYrNrcXuwwoLAuYcDM9RNzvON4QfD1Ng2Qtz5rffah2XPhNMlPJqlFnZeXVmJUeRWE8+/lhRiSOpLG110mbkWLHF+UjjDKugJlR1lvTElx6DiHAlJdV58po17F0aEpHInhw9NuZxxb5PvD7hOl9aAy56ennyNZ1njb0YBJ++jAzsk0sQveKA1uCKHoH4OOAW+8dRuOUCISB+1yUHTfr6MzPp3K+hK8zzDfSV5x9hJvq5hC0OjEFKPxjUY8bPUsva+KGflSYT8TBTlM+SCcBexEBEqDGxxqB9yKPrkpMZW8UbyuTrD4ybEqS8nFMT marcus.robinson@microsoft.com"
+        },
+        "nfsStorageOption": {
+            "value": "AzureFiles"
+        },
+        "mongoCertificateEmail": {
+            "value": "marcus.robinson@microsoft.com"
+        },
+        "mongoDBPassword": {
+            "value": "0penCG@@zure"
+        },
+        "catalogSecretKey": {
+            "value": "0penCG@@zure"
         },
         "openCgaAdminPassword": {
-            "value": ""
+            "value": "0penCG@@zure"
         }
     }
 }
